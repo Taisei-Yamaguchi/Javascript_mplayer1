@@ -1,0 +1,50 @@
+h1{
+    color:rgb(97, 15, 230);
+    background-color: rgb(216, 132, 6);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    text-align:center;
+}
+li{
+    text-align: left;
+}
+
+.appframe{
+    background-color: rgb(236, 173, 84);
+    width: 420px;
+    margin:auto;
+    padding:10px;
+    border-radius:10px;
+}
+
+html{
+    background-color:black;
+}
+
+.jackorantan{
+    padding-right:400px;
+    padding-bottom:10px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    color:rgb(0, 0, 0);
+    border-top:solid 1px #28012b;
+    padding: 2px;
+}
+
+.active{
+    background:#ebc281;
+    color:#87037e;
+}
+
+li:hover{
+    background:#ebc281;
+    
+}
