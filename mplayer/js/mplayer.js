@@ -1,7 +1,7 @@
 function playMusic(li){
     var file=li.getAttribute('data-file');
         var audio=document.querySelector('audio');
-        audio.setAttribute('src',file);
+        audio.setAttribute('src','music/'+file);
         audio.play();
         //classのactivityをクリックにより変更する。
         var activeli= document.querySelector('.active');
@@ -25,13 +25,13 @@ var audio=document.querySelector('audio');
 audio.addEventListener('play',
     (e)=>{
         var img=document.querySelector('.play_image');
-        img.setAttribute('src','pict_play.png');
+        img.setAttribute('src','images/pict_play.png');
     }
 );
 audio.addEventListener('pause',
     (e)=>{
         var img=document.querySelector('.play_image');
-        img.setAttribute('src','pict_stop.png');
+        img.setAttribute('src','images/pict_stop.png');
     }
 );
 //曲を最後まで再生したとき

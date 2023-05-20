@@ -3,25 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Javascriptのテスト</title>
-        <link rel="stylesheet" href="mplayer.css">
+        <link rel="stylesheet" href="css/mplayer.css">
     </head>
     <body>
-        <div class="jackorantan">
-            <img src="jackorantan.png" alt="ジャックオランタン" width ="70" heigt="70">
-        </div>
+        
         <div class="appframe">
         <h1>Happy Halloween</h1>
+       
         <p>Select a music！</p>
         <p><a id ="random" href="#">Random Select</a></p>
         
-        <div class="bat_image">
-            <img src="bat.png" alt="コウモリ" heigt="50" width="50">
-
+        <div class="Halloween_images" display:inline-block;>
+            <img src="images/jackorantan.png" alt="ジャックオランタン" width ="70" heigt="70" >
+            <img src="images/bat.png" alt="コウモリ" heigt="50" width="50" >
         </div>
          
-        <img src="pict_stop.png" class="play_image" alt="再生ボタン" height="100" width="100">
+        <img src="images/pict_stop.png" class="play_image" alt="再生ボタン" height="100" width="100">
     
-        <audio src="r2.mp3" controls></audio><br>
+        <audio src="music/r2.mp3" controls></audio><br>
        <ul>
         <li data-file="r2.mp3" class="active">果物屋</li>
         <li data-file="v2.mp3">人形遊び</li>
@@ -40,7 +39,7 @@
         <li data-file="ido.mp3">移動式井戸</li>
 
        </ul>
-       <script src="mplayer.js" charset="utf-8"></script>
+       <script src="js/mplayer.js" charset="utf-8"></script>
     </div>
     </body>
 
