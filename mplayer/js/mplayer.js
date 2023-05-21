@@ -1,3 +1,4 @@
+//音楽を再生するための関数
 function playMusic(li){
     var file=li.getAttribute('data-file');
         var audio=document.querySelector('audio');
@@ -21,6 +22,7 @@ for (var i=0; i<listitems.length; i++){
     );
 }
 
+//audio要素を取り出し、再生されてる時の処理
 var audio=document.querySelector('audio');
 audio.addEventListener('play',
     (e)=>{
@@ -28,6 +30,7 @@ audio.addEventListener('play',
         img.setAttribute('src','images/pict_play.png');
     }
 );
+//audio要素を取り出し、停止してる時の処理
 audio.addEventListener('pause',
     (e)=>{
         var img=document.querySelector('.play_image');
@@ -55,6 +58,7 @@ audio.addEventListener('ended',
     }
 );
 
+//randomにlistから一つ取得し処理
 var random=document.querySelector('#random');
 random.addEventListener('click',
     (e)=>{
